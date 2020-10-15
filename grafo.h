@@ -15,7 +15,7 @@ struct vertice{
 struct aresta{
 	int id;
 	vertice *saida;
-	vertice *entrada; //se não for bipartido nao tem diferença
+	vertice *entrada; //se não for dirigido nao tem diferença
 	int peso;
 	bool dirigido;
 };
