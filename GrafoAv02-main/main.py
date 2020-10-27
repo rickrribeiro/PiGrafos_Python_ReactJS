@@ -9,13 +9,32 @@ def main():
     
     app = flask.Flask(__name__)
     app.config["DEBUG"] = True
+    
+    ##################          ALL GET ENDPOINTS           ###########################
     @app.route('/', methods=['GET'])
     def home():
-       print("aqq")
-     #  my_graph.AddMultNodes("1")
-      # my_graph.AddNode('1')
+       return jsonify("Grafos")
+    
+    @app.route('/getNodes', methods=['GET'])
+    def getNodes():
        print(my_graph.ShowNodes())
        return jsonify(list(my_graph.ShowNodes()))
+       
+       
+       
+    @app.route('/getEdges', methods=['GET'])
+    def getEdges():    
+       return jsonify(list(my_graph.ShowEdges()))       
+        
+       
+    @app.route('/Clear', methods=['GET'])
+    def clear():
+        my_graph.ClearGraph()
+        return jsonify("Grafo Limpo")   
+      
+      
+      
+    ###################            ALL POST ENDPOINTS           ######################
        
     @app.route('/addNode', methods=['POST'])
     def addNode():
@@ -34,17 +53,14 @@ def main():
        data = str(request.json)
       # data.replace("b","'")
        #data = request.args.get('body')
-       print("data:")
-       print(data.split())
-      # my_graph.AddEdge(input("Digite a aresta inicial: "),input("Digite a aresta final: "))
+       data = data.split(".")
+       print(data[1])
+       my_graph.AddEdge(int(data[0]) , int(data[1]))
        
        return jsonify("adicionado")   
        
        
-    @app.route('/Clear', methods=['GET'])
-    def clear():
-        my_graph.ClearGraph()
-        return jsonify("Grafo Limpo")
+    
 	
 	
 	

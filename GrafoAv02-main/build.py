@@ -31,16 +31,19 @@ class Graph(object):
         self.G.add_edges_from(edges)
     
     def ShowNodes(self):
+        Addons.Log(self,"Visualizacao de Nos !\n")
         return self.G.nodes()
         
         
     def ShowEdges(self):
-        print(self.G.edges())
         Addons.Log(self,"Visualizacao de arestas !\n")
+        return self.G.edges()
+        
         
     def ShowListAdj(self):
-        print(self.G.adj)
         Addons.Log(self,"Lista de adjacencia gerada !\n")
+        return self.G.adj
+        
     
     def ShowDegreeNode(self,node):
         print(self.G.degree(node))
