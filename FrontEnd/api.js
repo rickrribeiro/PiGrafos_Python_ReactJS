@@ -42,7 +42,20 @@ const getDegree = async () => {
   // do something with myJson
 }
 
-
+const generateJson = async () => {
+  const response = await fetch('http://127.0.0.1:5000/generateJSON', {
+    method: 'POST',
+    body: document.getElementById("jsonText").value,
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': "GET, PUT, POST, DELETE, HEAD, OPTIONS"
+    }
+  });
+  const myJson = await response.json(); //extract JSON from the http response
+  console.log(myJson)
+  // do something with myJson
+}
 
 
 
