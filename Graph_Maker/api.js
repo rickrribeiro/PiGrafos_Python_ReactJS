@@ -27,9 +27,10 @@ const addEdge = async () => {
 }
 
 
-const getNodes = async () => {
+const getDegree = async () => {
   const response = await fetch('http://127.0.0.1:5000/getNodes', {
     method: 'GET',
+    body: document.getElementById("degreeText").value,
     headers: {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',

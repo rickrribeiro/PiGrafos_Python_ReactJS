@@ -24,7 +24,13 @@ def main():
        
     @app.route('/getEdges', methods=['GET'])
     def getEdges():    
-       return jsonify(list(my_graph.ShowEdges()))       
+       return jsonify(list(my_graph.ShowEdges()))
+       
+       
+    @app.route('/getAdj', methods=['GET'])
+    def getAdjacencia():    
+       print(my_graph.ShowListAdj())
+       return jsonify(str(my_graph.ShowListAdj()))    
         
        
     @app.route('/Clear', methods=['GET'])
@@ -72,15 +78,15 @@ def main():
   
         
        # print("\nBem vindo ao projeto av2 ! ")
-       # print("\n1- Adicionar vertice individualmente.")
-      #  print("2- Adicionar varios vertices.") #"spam"  4 nos: 's', 'p', 'a', 'm'
-      #  print("3- Adicionar arestas individualmente.")
+       # print("\n1- Adicionar vertice individualmente.") DONE
+      #  print("2- Adicionar varios vertices.") #"spam"  4 nos: 's', 'p', 'a', 'm' DONE
+      #  print("3- Adicionar arestas individualmente.") DONE
        # print("4- Salvar json.")
-      #  print("5- Exibir vertices.")
-      #  print("6- Exibir arestas.")
-      #  print("7- Exibir lista de adjacencia.")
-      #  print("8- Grau de um vertice especifico.")
-       # print("9- Limpar todos os nos e arestas do grafo.")
+      #  print("5- Exibir vertices.") DONE
+      #  print("6- Exibir arestas.") DONE
+      #  print("7- Exibir lista de adjacencia.") DONE
+      #  print("8- Grau de um vertice especifico.") DONE
+       # print("9- Limpar todos os nos e arestas do grafo.") DONE
        # choice = input("\nEscolha uma das opcoes acima: ")
         
     @app.route('/api/v1/resources/books', methods=['GET'])
