@@ -28,8 +28,8 @@ const addEdge = async () => {
 
 
 const getDegree = async () => {
-  const response = await fetch('http://127.0.0.1:5000/getNodes', {
-    method: 'GET',
+  const response = await fetch('http://127.0.0.1:5000/getDegree', {
+    method: 'POST',
     body: document.getElementById("degreeText").value,
     headers: {
       'Content-Type': 'application/json',
@@ -38,6 +38,7 @@ const getDegree = async () => {
     }
   });
   const myJson = await response.json(); //extract JSON from the http response
+  console.log(myJson)
   // do something with myJson
 }
 

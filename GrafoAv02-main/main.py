@@ -10,7 +10,7 @@ def main():
     app = flask.Flask(__name__)
     app.config["DEBUG"] = True
     
-    ##################          ALL GET ENDPOINTS           ###########################
+    ##################          ALL GET DATA ENDPOINTS           ###########################
     @app.route('/', methods=['GET'])
     def home():
        return jsonify("Grafos")
@@ -33,6 +33,16 @@ def main():
        return jsonify(str(my_graph.ShowListAdj()))    
         
        
+       
+    @app.route('/getDegree', methods=['POST'])
+    def getDegree():    
+       
+       node = request.get_json()
+       print(my_graph.ShowDegreeNode(node))
+       return jsonify(my_graph.ShowDegreeNode(node))   
+       
+       
+          
     @app.route('/Clear', methods=['GET'])
     def clear():
         my_graph.ClearGraph()
@@ -40,7 +50,7 @@ def main():
       
       
       
-    ###################            ALL POST ENDPOINTS           ######################
+    ###################            ALL POST DATA ENDPOINTS           ######################
        
     @app.route('/addNode', methods=['POST'])
     def addNode():

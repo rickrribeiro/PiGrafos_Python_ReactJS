@@ -46,8 +46,9 @@ class Graph(object):
         
     
     def ShowDegreeNode(self,node):
-        print(self.G.degree(node))
-        Addons.Log(self,"Visualizacao do grau do no "+node+" !\n")
+        Addons.Log(self,"Visualizacao do grau do no "+str(node)+" !\n")
+        return self.G.degree(node)
+        
     
     def ClearGraph(self):
         self.G.clear()
