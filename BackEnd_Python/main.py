@@ -95,7 +95,7 @@ def main():
        # print("\n1- Adicionar vertice individualmente.") DONE
       #  print("2- Adicionar varios vertices.") #"spam"  4 nos: 's', 'p', 'a', 'm' DONE
       #  print("3- Adicionar arestas individualmente.") DONE
-       # print("4- Salvar json.")
+       # print("4- Salvar json.") DONE
       #  print("5- Exibir vertices.") DONE
       #  print("6- Exibir arestas.") DONE
       #  print("7- Exibir lista de adjacencia.") DONE
