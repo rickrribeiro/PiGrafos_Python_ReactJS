@@ -66,7 +66,7 @@
                                 <!-- form -->
                                 <form action="#" class="search-box">
                                     <div class="input-form mb-30">
-                                        <input type="text" placeholder="txt box">
+                                        <input id="nodeText" type="text" placeholder="Node">
                                     </div>
                                     <div class="select-form mb-30">
                                         <div class="select-itms">
@@ -79,7 +79,8 @@
                                     <a onclick="addNode()" href="#" class="btn border-btn" style="color: white;">ADD</a>
 
                                        <div class="input-form mb-30">
-                                        <input type="text" placeholder="txt box">
+                                        <input id="edgeText1" type="text" placeholder="Node1">
+                                        <input id="edgeText2" type="text" placeholder="Node2">
                                     </div>
                                     <div class="select-form mb-30">
                                         <div class="select-itms">
@@ -89,7 +90,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <a href="#"  class="btn border-btn" style="color: white;">ADD</a>
+                                    <a href="#"  onclick="addEdge()" class="btn border-btn" style="color: white;">ADD</a>
 
                                        <div class="input-form mb-30">
                                         <input type="text" placeholder="txt box">

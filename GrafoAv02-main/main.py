@@ -17,15 +17,28 @@ def main():
        print(my_graph.ShowNodes())
        return jsonify(list(my_graph.ShowNodes()))
        
-    @app.route('/add', methods=['POST'])
-    def add():
+    @app.route('/addNode', methods=['POST'])
+    def addNode():
        print("aq")
-       data = request.form
+       data = request.get_json()
        print("data:")
        print(data)
-       my_graph.AddNode('1')
+       my_graph.AddNode(data)
        
        return jsonify("adicionado")
+       
+       
+    @app.route('/addEdge', methods=['POST'])
+    def addEdge():
+       print("aq")
+       data = str(request.json)
+      # data.replace("b","'")
+       #data = request.args.get('body')
+       print("data:")
+       print(data.split())
+      # my_graph.AddEdge(input("Digite a aresta inicial: "),input("Digite a aresta final: "))
+       
+       return jsonify("adicionado")   
        
        
     @app.route('/Clear', methods=['GET'])
