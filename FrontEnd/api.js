@@ -44,8 +44,7 @@ const getDegree = async () => {
 
 const generateJson = async () => {
   const response = await fetch('http://127.0.0.1:5000/generateJSON', {
-    method: 'POST',
-    body: document.getElementById("jsonText").value,
+    method: 'GET',
     headers: {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',

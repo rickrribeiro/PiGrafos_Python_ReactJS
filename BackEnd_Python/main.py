@@ -48,6 +48,10 @@ def main():
         my_graph.ClearGraph()
         return jsonify("Grafo Limpo")   
       
+    ###################            Generate files ENDPOINTS          ######################
+    @app.route('/generateJSON', methods=['GET'])
+    def generateJson():    
+       return jsonify(my_graph.dump_json_graph("graph")) 
       
       
     ###################            ALL POST DATA ENDPOINTS           ######################

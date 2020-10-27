@@ -55,12 +55,13 @@ class Graph(object):
         Addons.Log(self,"Limpeza do grafo concluida !\n")
         
     def dump_json_graph(self,name):
-        print("--> Gerando grafo no arquivo: " + name + ".json")
+       # print("--> Gerando grafo no arquivo: " + name + ".json")
         jsondata = json_graph.node_link_data(self.G)
         with open(name + '.json', 'w') as fp:
             json.dump(jsondata, fp)
-        print("--> Completo")
+       #print("--> Completo")
         Addons.Log(self,"Json gerado com sucesso !\n")
+        return "--> Gerando grafo no arquivo: " + name + ".json"
 
     def WritePajek(self):
         nx.write_pajek(self.G,"grafo.net")
