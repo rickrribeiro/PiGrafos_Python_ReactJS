@@ -16,11 +16,11 @@ class Graph(object):
     
     def AddNode(self,node):
         self.G.add_node(node)
-        Addons.Log(self,"Nó "+node+" adicionado com sucesso!\n")
+       
     
     def AddMultNodes(self,nodes):
         self.G.add_nodes_from(nodes)
-        Addons.Log(self,"Nós "+nodes+" adicionados com sucesso!\n")
+        Addons.Log(self,"Nos "+nodes+" adicionados com sucesso!\n")
     
     def AddEdge(self,init_node,end_node):
         edge = (init_node,end_node)
@@ -31,12 +31,12 @@ class Graph(object):
         self.G.add_edges_from(edges)
     
     def ShowNodes(self):
-        print(self.G.nodes())
-        Addons.Log(self,"Visualização de nós !\n")
+        return self.G.nodes()
+        
         
     def ShowEdges(self):
         print(self.G.edges())
-        Addons.Log(self,"Visualização de arestas !\n")
+        Addons.Log(self,"Visualizacao de arestas !\n")
         
     def ShowListAdj(self):
         print(self.G.adj)
@@ -44,7 +44,7 @@ class Graph(object):
     
     def ShowDegreeNode(self,node):
         print(self.G.degree(node))
-        Addons.Log(self,"Visualização do grau do nó "+node+" !\n")
+        Addons.Log(self,"Visualizacao do grau do no "+node+" !\n")
     
     def ClearGraph(self):
         self.G.clear()
@@ -89,7 +89,7 @@ class Graph(object):
         
     def NumberOfNodes(self):
         print(len(self.G))
-        Addons.CalculusLog(self,"Numero de nós: " + len(self.G))
+        Addons.CalculusLog(self,"Numero de nos: " + len(self.G))
         
     def NumberOfEdges(self):
         print(self.G.number_of_edges())

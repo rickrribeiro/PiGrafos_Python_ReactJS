@@ -71,12 +71,12 @@
                                     <div class="select-form mb-30">
                                         <div class="select-itms">
                                             <select name="select" id="select1">
-                                                <option value="">Opções</option>
+                                                
                                                 <option value="">NODE</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <a href="#" class="btn border-btn" style="color: white;">ADD</a>
+                                    <a onclick="addNode()" href="#" class="btn border-btn" style="color: white;">ADD</a>
 
                                        <div class="input-form mb-30">
                                         <input type="text" placeholder="txt box">
@@ -84,12 +84,12 @@
                                     <div class="select-form mb-30">
                                         <div class="select-itms">
                                             <select name="select" id="select1">
-                                                <option value="">Opções</option>
+                                               
                                                 <option value="">EDGE</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <a href="#" class="btn border-btn" style="color: white;">ADD</a>
+                                    <a href="#"  class="btn border-btn" style="color: white;">ADD</a>
 
                                        <div class="input-form mb-30">
                                         <input type="text" placeholder="txt box">
@@ -97,7 +97,7 @@
                                     <div class="select-form mb-30">
                                         <div class="select-itms">
                                             <select name="select" id="select1">
-                                                <option value="">Opções</option>
+                                               
                                                 <option value="">REMOVE NODE</option>
                                             </select>
                                         </div>
@@ -110,7 +110,7 @@
                                     <div class="select-form mb-30">
                                         <div class="select-itms">
                                             <select name="select" id="select1">
-                                                <option value="">Opções</option>
+                                               
                                                 <option value="">REMOVE EDGE</option>
                                             </select>
                                         </div>
@@ -119,7 +119,7 @@
                                 </form> 
                                 <br>
                                 <br>
-                                <center><a href="#" class="btn border-btn" style="color: white;">CLEAR NODE</a></center>
+                                <center><a onclick="clearGraph()" href="#" class="btn border-btn" style="color: white;">CLEAR NODE</a></center>
                                 <br>
                                 <br>
                                 <center><a href="#" class="btn border-btn" style="color: white;">GENERATE GRAPH</a></center>
@@ -136,7 +136,7 @@
       
 
 	<!-- JS aqui -->
-    
+        <script src="./api.js"></script>
         <!-- All JS Custom Plugins Link Here here -->
         <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
         
