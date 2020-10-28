@@ -1,0 +1,13 @@
+1. Mostrar erros na tela
+
+2. Colocar para só conseguir selecionar 1 opção no direcional/nao direcional
+
+3. colocar os campos "node1" e "node2" no add edge na mesma linha
+
+4.colocar os dropdowns que tem "node" "edge" "degree" "generate json" como campo texto apenas
+
+5. alinhar botoes e os campos que vão substituir o dropdown
+
+6. Remover o campo input "json name" e colocar o generate json lá em baixo aonde tem generate graph
+
+7. Colocar local de exibição da imagem do grafo gerado enviada pelo backend
