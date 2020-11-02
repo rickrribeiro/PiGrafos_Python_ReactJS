@@ -1,1 +1,1 @@
-google-chrome --disable-web-security --user-data-dir=c:\my\data
+google-chrome --disable-web-security --user-data-dir=c:\my\data FrontEnd/index.html

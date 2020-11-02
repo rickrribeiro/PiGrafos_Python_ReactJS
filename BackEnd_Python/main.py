@@ -29,6 +29,8 @@ def main():
        
     @app.route('/getAdj', methods=['GET'])
     def getAdjacencia():    
+       my_graph.PlotGraph()
+       my_graph.KamadaGraph()
        print(my_graph.ShowListAdj())
        return jsonify(str(my_graph.ShowListAdj()))    
         
