@@ -71,7 +71,7 @@
                                     <div class="select-form mb-30">
                                         <div class="select-itms">
                                             
-                                                <a type="button" onclick="addNode()" class="btn btn-success">ADD NODE</a>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<a type="button" onclick="addNode()" class="btn btn-success">ADD NODE</a>
                                                
                                             
                                         </div>
@@ -82,39 +82,48 @@
                                         <input id="edgeText2" type="text" placeholder="Node2">
                                     </div>
                                     <div class="select-form mb-30">
-                                       <a type="button" onclick="addEdge()" class="btn btn-success">ADD EDGE</a>
+                                       &nbsp;&nbsp;&nbsp;&nbsp;<a type="button" onclick="addEdge()" class="btn btn-success">ADD EDGE</a>
                                     </div>
                                    
 
                                        <div class="input-form ">
                                         <input type="text" id="degreeText" placeholder="Node">
                                     </div>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
                                      <div class="select-form ">
                                         <div class="select-itms">
                                             <select name="select" id="select1">
                                                
-                                                <option value="">GENERATE JSON</option>
+                                                <option value="">CALCULUS</option>
                                             </select>
                                         </div>
                                     </div>  
-                                    <div class="select-form ">
-                                       <a type="button" onclick="getDegree()" class="btn btn-success">GET DEGREE</a>
+                                 
+                                     &nbsp;&nbsp;&nbsp;&nbsp;    <a type="button" onclick="getDegree()" class="btn btn-success">GET DEGREE</a>
+                               		
+                               		<div class="select-form ">
+                                        <div class="select-itms">
+                                            <select name="select" id="select1">
+                                               
+                                                <option value="">Graph Type</option>
+                                            </select>
+                                        </div>
+                                    </div>  
+                                     <div class="select-form mb-30">
+                                       &nbsp;&nbsp;&nbsp;&nbsp;<center><a href="#" class="btn btn-danger" style="color: white;">GENERATE GRAPH</a></center>
                                     </div>
-                                    
-
                                        
-                                   
+				     <div class="select-form mb-30">
+                                       &nbsp;&nbsp;&nbsp;&nbsp;<center> <a href="#" onclick="generateJson()" class="btn btn-danger" style="color: white;">GENERATE JSON</a></center>
+                                    </div>
+                                       
+                                    <div class="select-form mb-30">
+                                       &nbsp;&nbsp;&nbsp;&nbsp; <center><a onclick="clearGraph()" href="#" class="btn btn-danger" style="color: white;">CLEAR GRAPH</a></center>
+                                    </div>
+                                       
                                   
                                 </form> 
-                                <br>
-                                <br>
-                                <center><a onclick="clearGraph()" href="#" class="btn btn-danger" style="color: white;">CLEAR GRAPH</a></center>
-                                <br>
-                                <br>
-                                 <center> <a href="#" onclick="generateJson()" class="btn btn-danger" style="color: white;">GENERATE JSON</a></center>
-                                 <br>
-                                <br>
-                                <center><a href="#" class="btn btn-danger" style="color: white;">GENERATE GRAPH</a></center>
+                               
                             <!-- Form acaba aqui -->
                             </div>
                         </div>
