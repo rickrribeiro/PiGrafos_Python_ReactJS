@@ -105,12 +105,12 @@
                                         <div class="select-itms">
                                             <select name="select" id="select1">
                                                
-                                                <option value="">Graph Type</option>
+                                                <option value="">Kamada Graph</option>
                                             </select>
                                         </div>
                                     </div>  
                                      <div class="select-form mb-30">
-                                       &nbsp;&nbsp;&nbsp;&nbsp;<center><a href="#" class="btn btn-danger" style="color: white;">GENERATE GRAPH</a></center>
+                                       &nbsp;&nbsp;&nbsp;&nbsp;<center><a href="#" onclick="generateKamada()" class="btn btn-danger" style="color: white;">GENERATE GRAPH</a></center>
                                     </div>
                                        
 				     <div class="select-form mb-30">
@@ -134,7 +134,7 @@
             </div>
         </div>
     </div>
-      
+      <img src="" id="graphImage" width="500" height="600">
 
 	<!-- JS aqui -->
         <script src="./api.js"></script>
