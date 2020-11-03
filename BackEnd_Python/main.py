@@ -40,6 +40,17 @@ def main():
     @app.route('/getNEdges', methods=['GET'])
     def getNEdges():    
        return jsonify(str(my_graph.NumberOfEdges()))
+    
+    
+    
+    @app.route('/getNComponents', methods=['GET'])
+    def getNComponents():    
+       return jsonify(str(my_graph.NumberOfComponents()))
+       
+       
+    @app.route('/getDensity', methods=['GET'])
+    def getDensity():    
+       return jsonify(str(my_graph.GraphDensity()))
         
        
        

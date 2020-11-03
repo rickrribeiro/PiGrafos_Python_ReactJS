@@ -101,14 +101,14 @@ class Graph(object):
         return self.G.number_of_edges()
         
     def NumberOfComponents(self):
-        print(self.G.number_of_edges()+len(self.G))
-        Addons.CalculusLog(self,"Numero de componentes: " + self.G.number_of_edges()+len(self.G))
+        Addons.CalculusLog(self,"Numero de componentes: " + str(self.G.number_of_edges()+len(self.G)))
+        return self.G.number_of_edges()+len(self.G)
         
     def ShortestPath(self,init,end):
         print(nx.shortest_path(self.G,source=init,target=end))
         
     def GraphDensity(self):
-        print(nx.density(self.G))
+        return nx.density(self.G)
         
     def AverageClustering(self):
         print(nx.average_clustering(self.G))

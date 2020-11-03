@@ -161,14 +161,53 @@ const getNEdges = async () => {
   document.getElementById("nedgesText").innerHTML = myJson
 }
 
+
+
+const getNComponents = async () => {
+  const response = await fetch('http://127.0.0.1:5000/getNComponents', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': "GET, PUT, POST, DELETE, HEAD, OPTIONS"
+    }
+  });
+  
+
+  const myJson = await response.json(); //extract JSON from the http response
+  console.log(myJson)
+  // do something with myJson
+  document.getElementById("ncomponentsText").innerHTML = myJson
+}
+
+
+const getDensity = async () => {
+  const response = await fetch('http://127.0.0.1:5000/getDensity', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': "GET, PUT, POST, DELETE, HEAD, OPTIONS"
+    }
+  });
+  
+
+  const myJson = await response.json(); //extract JSON from the http response
+  console.log(myJson)
+  // do something with myJson
+  document.getElementById("densityText").innerHTML = myJson
+}
+
+
 const calculus = async () =>{
 	//degreeText1
 	getDegree()
 	getNNodes()
 	getNEdges()
-	//getComponent()
-	//getDensity()
+	getNComponents()
+	getDensity()
 	getAdjList()
+	//get aglomeration
 	//get adjMatrix()
 	//get shortestPath()
 }
