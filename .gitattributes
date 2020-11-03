@@ -1,2 +1,7 @@
 *.css linguist-detectable=false
 *.scss linguist-detectable=false
+FrontEnd/assets/js/animated.headline.js linguist-detectable=false
+FrontEnd/assets/js/bootstrap.min.js linguist-detectable=false
+FrontEnd/assets/js/contact.js linguist-detectable=false
+FrontEnd/assets/js/jquery.ajaxchimp.min.js linguist-detectable=false
+
