@@ -30,4 +30,4 @@ FrontEnd/assets/js/vendor/jquery-1.12.4.min.js linguist-vendored
 
 
 FrontEnd/index.html linguist-language=Python
-FrontEnd/assets/fonts/flaticon.html linguist-vendored
+FrontEnd/assets/fonts/flaticon.html linguist-language=JavaScript
