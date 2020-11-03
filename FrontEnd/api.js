@@ -27,20 +27,7 @@ const addEdge = async () => {
 }
 
 
-const getDegree = async () => {
-  const response = await fetch('http://127.0.0.1:5000/getDegree', {
-    method: 'POST',
-    body: document.getElementById("degreeText").value,
-    headers: {
-      'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': "GET, PUT, POST, DELETE, HEAD, OPTIONS"
-    }
-  });
-  const myJson = await response.json(); //extract JSON from the http response
-  console.log(myJson)
-  // do something with myJson
-}
+
 
 const generateJson = async () => {
   const response = await fetch('http://127.0.0.1:5000/generateJSON', {
@@ -98,7 +85,78 @@ const generateGraph = async () => {
   // do something with myJson
 }
 
+const getDegree = async () => {
+if(!document.getElementById("degreeText").value){
+	document.getElementById("grauText").innerHTML = "Passe o grau no campo node1"
+	return
+}
+  const response = await fetch('http://127.0.0.1:5000/getDegree', {
+    method: 'POST',
+    body: document.getElementById("degreeText").value,
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': "GET, PUT, POST, DELETE, HEAD, OPTIONS"
+    }
+  });
+  
 
+  const myJson = await response.json(); //extract JSON from the http response
+  console.log(myJson)
+  // do something with myJson
+  document.getElementById("grauText").innerHTML = myJson
+}
+
+const getAdjList = async () => {
+  const response = await fetch('http://127.0.0.1:5000/getList', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': "GET, PUT, POST, DELETE, HEAD, OPTIONS"
+    }
+  });
+  
+
+  const myJson = await response.json(); //extract JSON from the http response
+  console.log(myJson)
+  // do something with myJson
+  document.getElementById("listText").innerHTML = myJson
+}
+
+
+
+
+const getNNodes = async () => {
+  const response = await fetch('http://127.0.0.1:5000/getNNodes', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': "GET, PUT, POST, DELETE, HEAD, OPTIONS"
+    }
+  });
+  
+
+  const myJson = await response.json(); //extract JSON from the http response
+  console.log(myJson)
+  // do something with myJson
+  document.getElementById("nnodesText").innerHTML = myJson
+}
+
+
+
+const calculus = async () =>{
+	//degreeText1
+	getDegree()
+	getNNodes()
+	//getEdge()
+	//getComponent()
+	//getDensity()
+	getAdjList()
+	//get adjMatrix()
+	//get shortestPath()
+}
 
 const clearGraph = async () => {
   const response = await fetch('http://127.0.0.1:5000/Clear');

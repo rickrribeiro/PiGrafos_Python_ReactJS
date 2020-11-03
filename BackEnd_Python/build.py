@@ -93,12 +93,12 @@ class Graph(object):
         plt.savefig("grafo_Fruchterman.png")
         
     def NumberOfNodes(self):
-        print(len(self.G))
-        Addons.CalculusLog(self,"Numero de nos: " + len(self.G))
+        Addons.CalculusLog(self,"Numero de nos: " + str(len(self.G)))
+        return len(self.G)
         
     def NumberOfEdges(self):
-        print(self.G.number_of_edges())
-        Addons.CalculusLog(self,"Numero de arestas: " + self.G.number_of_edges())
+        Addons.CalculusLog(self,"Numero de arestas: " + str(self.G.number_of_edges()))
+        return self.G.number_of_edges()
         
     def NumberOfComponents(self):
         print(self.G.number_of_edges()+len(self.G))

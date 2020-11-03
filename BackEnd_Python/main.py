@@ -27,13 +27,20 @@ def main():
        return jsonify(list(my_graph.ShowEdges()))
        
        
-    @app.route('/getAdj', methods=['GET'])
+    @app.route('/getList', methods=['GET'])
     def getAdjacencia():    
-       my_graph.KamadaGraph()
        print(my_graph.ShowListAdj())
        return jsonify(str(my_graph.ShowListAdj()))    
         
-   
+    @app.route('/getNNodes', methods=['GET'])
+    def getNVertice():    
+       return jsonify(str(my_graph.NumberOfNodes()))
+       
+       
+    @app.route('/getNEdges', methods=['GET'])
+    def getNEdges():    
+       return jsonify(str(my_graph.NumberOfEdges()))
+        
        
        
        
