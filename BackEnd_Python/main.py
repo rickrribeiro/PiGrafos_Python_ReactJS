@@ -33,10 +33,7 @@ def main():
        print(my_graph.ShowListAdj())
        return jsonify(str(my_graph.ShowListAdj()))    
         
-    @app.route('/getKamada', methods=['GET'])
-    def getKamada():    
-       my_graph.KamadaGraph()
-       return jsonify("foi") 
+   
        
        
        
@@ -58,6 +55,11 @@ def main():
     @app.route('/generateJSON', methods=['GET'])
     def generateJson():    
        return jsonify(my_graph.dump_json_graph("graph")) 
+    
+     @app.route('/getKamada', methods=['GET'])
+     def getKamada():    
+       my_graph.KamadaGraph()
+       return jsonify("foi") 
       
       
     ###################            ALL POST DATA ENDPOINTS           ######################
