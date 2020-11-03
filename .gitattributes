@@ -1,13 +1,3 @@
 *.css linguist-detectable=false
 *.scss linguist-detectable=false
-FrontEnd/assets/js/animated.headline.js linguist-vendored=false
-FrontEnd/assets/js/bootstrap.min.js linguist-vendored=false
-FrontEnd/assets/js/contact.js linguist-vendored=false
-FrontEnd/assets/js/jquery.ajaxchimp.min.js linguist-vendored=false
-FrontEnd/assets/js/jquery.form.js linguist-vendored=false
-FrontEnd/assets/js/jquery.magnific-popup.js linguist-vendored=false
-FrontEnd/assets/js/jquery.nice-select.min.js linguist-vendored=false
-FrontEnd/assets/js/jquery.paroller.min.js linguist-vendored=false
 
-FrontEnd/assets/js/jquery.scrollUp.min.js linguist-vendored=false
-FrontEnd/assets/js/jquery.slicknav.min.js linguist-vendored=false
