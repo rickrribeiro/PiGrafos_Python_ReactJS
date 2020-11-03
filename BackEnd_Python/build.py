@@ -73,24 +73,24 @@ class Graph(object):
         
     def PlotGraph(self):
         nx.draw(self.G,with_labels=True, font_weight='bold')
-        plt.savefig("grafo.png")
+        plt.savefig("grafo_Simple.png")
         
     def CircularGraph(self):
         nx.draw_circular(self.G,with_labels=True, font_weight='bold')
-        plt.savefig("grafo_circular.png")
+        plt.savefig("grafo_Circular.png")
         
     def RandomGraph(self):
         nx.draw_random(self.G,with_labels=True, font_weight='bold')
-        plt.savefig("grafo_aleatorio.png")
+        plt.savefig("grafo_Random.png")
     
     def KamadaGraph(self):
         nx.draw_kamada_kawai(self.G,with_labels=True, font_weight='bold')
-        plt.savefig("grafo_kamada.png")
+        plt.savefig("grafo_Kamada.png")
         
     def FruchtermanGraph(self):
         pos=nx.spring_layout(self.G)
         nx.draw_spring(self.G,with_labels=True,font_weight='bold')
-        plt.savefig("Fruchterman.png")
+        plt.savefig("grafo_Fruchterman.png")
         
     def NumberOfNodes(self):
         print(len(self.G))

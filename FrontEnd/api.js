@@ -57,8 +57,34 @@ const generateJson = async () => {
 }
 
 
-const generateKamada = async () => {
-  const response = await fetch('http://127.0.0.1:5000/getKamada', {
+
+
+
+const generateGraph = async () => {
+  var e = document.getElementById("selectGraph");
+  var selected = e.value;
+  var type;
+  console.log(selected)
+  switch (selected){
+  	case '1':
+  	  type = "Simple"
+  	  break;
+  	case '2':
+  	  type = "Random"
+  	  break;
+  	case '3':
+  	  type = "Circular"
+  	  break;
+  	case '4':
+  	  type = "Kamada"
+  	  break;
+  	case '5':
+  	  type = "Fruchterman"
+  	  break; 
+  	 
+  }
+  
+  const response = await fetch('http://127.0.0.1:5000/get'+type, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -67,7 +93,7 @@ const generateKamada = async () => {
     }
   });
   const myJson = await response.json(); //extract JSON from the http response
-  document.getElementById("graphImage").src = "../BackEnd_Python/grafo_kamada.png"
+  document.getElementById("graphImage").src = "../BackEnd_Python/grafo_"+type+".png?" + new Date().getTime()
   console.log(myJson)
   // do something with myJson
 }

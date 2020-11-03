@@ -56,11 +56,34 @@ def main():
     def generateJson():    
        return jsonify(my_graph.dump_json_graph("graph")) 
     
-     @app.route('/getKamada', methods=['GET'])
-     def getKamada():    
+    @app.route('/getKamada', methods=['GET'])
+    def getKamada():    
        my_graph.KamadaGraph()
-       return jsonify("foi") 
+       return jsonify("teste") 
+       
+       
+    @app.route('/getSimple', methods=['GET'])
+    def getSimple():    
+       my_graph.PlotGraph()
+       return jsonify("teste")
+       
+       
+    @app.route('/getCircular', methods=['GET'])
+    def getCircular():    
+       my_graph.CircularGraph()
+       return jsonify("teste")  
+       
+       
+    @app.route('/getRandom', methods=['GET'])
+    def getRandom():    
+       my_graph.RandomGraph()
+       return jsonify("teste") 
       
+      
+    @app.route('/getFruchterman', methods=['GET'])
+    def getFruchterman():    
+       my_graph.FruchtermanGraph()
+       return jsonify("teste") 
       
     ###################            ALL POST DATA ENDPOINTS           ######################
        
