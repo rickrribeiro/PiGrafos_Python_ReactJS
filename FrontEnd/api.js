@@ -167,7 +167,7 @@ const getAdjMatrix = async () => {
   const myJson = await response.json(); //extract JSON from the http response
   console.log(myJson)
   // do something with myJson
-  document.getElementById("matrixText").innerHTML = myJson
+  document.getElementById("matrixText").innerHTML = myJson.replaceAll("]","]</br>")
 }
 
 
