@@ -105,7 +105,7 @@ class Graph(object):
         return self.G.number_of_edges()+len(self.G)
         
     def ShortestPath(self,init,end):
-        print(nx.shortest_path(self.G,source=init,target=end))
+        return nx.shortest_path(self.G,source=init,target=end)
         
     def GraphDensity(self):
         return nx.density(self.G)

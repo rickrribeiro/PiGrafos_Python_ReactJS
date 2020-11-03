@@ -73,6 +73,20 @@ def main():
        return jsonify(my_graph.ShowDegreeNode(node))   
        
        
+       
+       
+    @app.route('/getPath', methods=['POST'])
+    def getPath():
+       data = str(request.json)
+      # data.replace("b","'")
+       #data = request.args.get('body')
+       data = data.split(".")
+       print(data[1])
+       result = my_graph.ShortestPath(int(data[0]) , int(data[1]))
+       
+       return jsonify(str(result))   
+       
+       
           
     @app.route('/Clear', methods=['GET'])
     def clear():

@@ -107,6 +107,34 @@ if(!document.getElementById("degreeText").value){
   document.getElementById("grauText").innerHTML = myJson
 }
 
+
+const getPath = async () => {
+if(!document.getElementById("degreeText").value){
+	document.getElementById("pathText").innerHTML += "Passe o grau no campo node1"
+	return
+}
+if(!document.getElementById("degreeText2").value){
+	document.getElementById("pathText").innerHTML += "Passe o grau no campo node2"
+	return
+}
+  const response = await fetch('http://127.0.0.1:5000/getPath', {
+    method: 'POST',
+    body: document.getElementById("degreeText").value+"."+document.getElementById("degreeText2").value,
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': "GET, PUT, POST, DELETE, HEAD, OPTIONS"
+    }
+  });
+  const myJson = await response.json(); //extract JSON from the http response
+  document.getElementById("pathText").innerHTML = myJson
+  // do something with myJson
+}
+
+
+
+
+
 const getAdjList = async () => {
   const response = await fetch('http://127.0.0.1:5000/getList', {
     method: 'GET',
@@ -246,7 +274,7 @@ const calculus = async () =>{
 	getAdjList()
 	getClustering()
 	getAdjMatrix()
-	//get shortestPath()
+	getPath()
 }
 
 const clearGraph = async () => {
