@@ -122,7 +122,7 @@ class Graph(object):
     def AdjMatrix(self):
         #A = nx.adjacency_matrix(self.G)
         A = nx.to_numpy_matrix(self.G)
-        print(A)
+        return A
         
     
     

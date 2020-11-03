@@ -30,7 +30,12 @@ def main():
     @app.route('/getList', methods=['GET'])
     def getAdjacencia():    
        print(my_graph.ShowListAdj())
-       return jsonify(str(my_graph.ShowListAdj()))    
+       return jsonify(str(my_graph.ShowListAdj()))   
+       
+    @app.route('/getMatrix', methods=['GET'])
+    def getMatrix():    
+       print(my_graph.AdjMatrix())
+       return jsonify(str(my_graph.AdjMatrix())) 
         
     @app.route('/getNNodes', methods=['GET'])
     def getNVertice():    
