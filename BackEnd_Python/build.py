@@ -111,7 +111,7 @@ class Graph(object):
         return nx.density(self.G)
         
     def AverageClustering(self):
-        print(nx.average_clustering(self.G))
+        return nx.average_clustering(self.G)
     
     def ReadCSV(self):
         self.G = nx.read_adjlist('AdjGraph.csv',delimiter=',')

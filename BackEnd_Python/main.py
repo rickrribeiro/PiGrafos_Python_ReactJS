@@ -51,6 +51,11 @@ def main():
     @app.route('/getDensity', methods=['GET'])
     def getDensity():    
        return jsonify(str(my_graph.GraphDensity()))
+       
+       
+    @app.route('/getClustering', methods=['GET'])
+    def getClustering():    
+       return jsonify(str(my_graph.AverageClustering()))
         
        
        
