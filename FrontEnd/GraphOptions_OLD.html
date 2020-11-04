@@ -51,11 +51,11 @@
                             <div class="support-caption">
                                 <div class="select-suport-items">
                                     <label class="single-items" style="color: white;">Não-direcional
-                                        <input type="radio" checked="checked active" name="opcao">
+                                        <input type="checkbox" checked="checked active">
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="single-items" style="color: white;">Direcional
-                                        <input type="radio" name="opcao">
+                                        <input type="checkbox">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
@@ -71,36 +71,36 @@
                                     <div class="select-form mb-30">
                                         <div class="select-itms">
                                             
-                                                &nbsp;&nbsp;&nbsp;&nbsp;<a type="button" onclick="addNode()" class="btn btn-success" id="add_node">ADD NODE</a>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<a type="button" onclick="addNode()" class="btn btn-success">ADD NODE</a>
                                                
                                             
                                         </div>
                                     </div>
                        
-                                    <div class="input-form mb-30">
+                                       <div class="input-form mb-30">
                                         <input id="edgeText1" type="text" placeholder="Node1">
                                         <input id="edgeText2" type="text" placeholder="Node2">
                                     </div>
-
                                     <div class="select-form mb-30">
-                                       &nbsp;&nbsp;&nbsp;&nbsp;<a type="button" onclick="addEdge()" class="btn btn-success" id="add_edge">ADD EDGE</a>
+                                       &nbsp;&nbsp;&nbsp;&nbsp;<a type="button" onclick="addEdge()" class="btn btn-success">ADD EDGE</a>
                                     </div>
                                    
 
-                                       <div class="input-form  ">
+                                       <div class="input-form ">
                                         <input type="text" id="degreeText" placeholder="Node1">
                                         <input type="text" id="degreeText2" placeholder="Node2">
                                     </div>
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                     <div class="select-form "id="calc">
+                                     <div class="select-form ">
                                         <div class="select-itms">
                                             <select name="select" id="select1">
-                                                <option value="" >CALCULUS</option>
+                                               
+                                                <option value="">CALCULUS</option>
                                             </select>
                                         </div>
                                     </div>  
                                  
-                                     &nbsp;&nbsp;&nbsp;&nbsp;    <center><a type="button" onclick="calculus()" class="btn btn-success" id="get_all">GET All</a></center>
+                                     &nbsp;&nbsp;&nbsp;&nbsp;    <a type="button" onclick="calculus()" class="btn btn-success">GET All</a>
                                		
                                		<div class="select-form ">
                                         <div class="select-itms">
@@ -115,15 +115,15 @@
                                         </div>
                                     </div>  
                                      <div class="select-form mb-30">
-                                       &nbsp;&nbsp;&nbsp;&nbsp;<center><a href="#" onclick="generateGraph()" class="btn btn-danger" id="generate_graph">GENERATE GRAPH</a></center>
+                                       &nbsp;&nbsp;&nbsp;&nbsp;<center><a href="#" onclick="generateGraph()" class="btn btn-danger" style="color: white;">GENERATE GRAPH</a></center>
                                     </div>
                                        
 				     <div class="select-form mb-30">
-                                       &nbsp;&nbsp;&nbsp;&nbsp;<center> <a href="#" onclick="generateJson()" class="btn btn-danger" id="generate_json">GENERATE JSON</a></center>
+                                       &nbsp;&nbsp;&nbsp;&nbsp;<center> <a href="#" onclick="generateJson()" class="btn btn-danger" style="color: white;">GENERATE JSON</a></center>
                                     </div>
                                        
                                     <div class="select-form mb-30">
-                                       &nbsp;&nbsp;&nbsp;&nbsp; <center><a onclick="clearGraph()" href="#" class="btn btn-danger" id="clear_graph">CLEAR GRAPH</a></center>
+                                       &nbsp;&nbsp;&nbsp;&nbsp; <center><a onclick="clearGraph()" href="#" class="btn btn-danger" style="color: white;">CLEAR GRAPH</a></center>
                                     </div>
                                        
                                   

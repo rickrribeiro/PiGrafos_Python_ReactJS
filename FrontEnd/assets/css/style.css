@@ -5972,3 +5972,64 @@ form.search-box .search-form a {
     font-weight: 700;
 }
 
+#edgeText1{
+    width: 290px;
+    margin: 10px auto;
+}
+#edgeText2{
+    width: 295px;
+    margin: 10px auto;
+    position: relative;
+    right: -300px;
+    top: -75px;
+}
+
+#degreeText{
+    width: 295px;
+    margin: 10px auto;
+}
+#degreeText2{
+    width: 300px;
+    margin: 10px auto;
+    position: relative;
+    right: -300px;
+    top: -75px;
+}
+
+#calc{
+    width:300px;
+    margin: 10px auto;
+    top: -75px;
+
+
+}
+
+#get_all{
+    margin: 10px auto;
+    color: white;
+}
+
+#add_edge{
+    margin: 10px auto;
+    color: white;
+}
+
+#add_node{
+    color: white;
+}
+
+#generate_graph{
+    margin: 10px auto;
+    top: -35px;
+    color: white;
+}
+
+#generate_json{
+    margin: 10px auto;
+    top: -35px;
+    color: white;
+}
+
+#clear_graph{
+    color: white;
+}
