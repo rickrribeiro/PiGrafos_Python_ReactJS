@@ -1,0 +1,16 @@
+Tutorial Linux:
+	1.Abra uma janela do terminal e rode o arquivo "./runFrontEndLinux.sh"
+
+	2.Abra uma janela do terminal e rode o arquivo "./runBackEndLinux.sh"
+
+
+
+
+
+Tutorial Windows:
+	1.Abra uma janela do cmd e rode o arquivo "./runBackEndWindows.bat"
+
+	2.1. Abra o arquivo "./runFrontEndWindows.bat" com o bloco de notas
+	2.2. Aonde tem "[PATH_TO_CHROME]\chrome.exe" altere o "[PATH_TO_CHROME]" para o diretório do Google Chrome em sua maquina
+	2.3. Abra uma janela do cmd e rode o arquivo "./runFrontEndWindows.bat"
+	
