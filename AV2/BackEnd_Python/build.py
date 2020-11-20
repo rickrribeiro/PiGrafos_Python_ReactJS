@@ -110,12 +110,15 @@ class Graph(object):
         return self.G.number_of_edges()+len(self.G)
         
     def ShortestPath(self,init,end):
+        Addons.CalculusLog(self,"Caminho minimo: " + nx.shortest_path(self.G,source=init,target=end))
         return nx.shortest_path(self.G,source=init,target=end)
         
     def GraphDensity(self):
+        Addons.CalculusLog(self,"Densidade: " + nx.density(self.G))
         return nx.density(self.G)
         
     def AverageClustering(self):
+        Addons.CalculusLog(self,"Aglomeracao: " + nx.average_clustering(self.G))
         return nx.average_clustering(self.G)
     
     def ReadCSV(self):
