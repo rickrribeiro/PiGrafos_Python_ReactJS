@@ -1,7 +1,7 @@
 import networkx as nx
 from networkx.readwrite import json_graph
 import json
-from aux import Addons
+from outronome import Addons
 import matplotlib.pyplot as plt
 import scipy
 from networkx.drawing.nx_agraph import graphviz_layout
