@@ -4,6 +4,7 @@ import './App.css'
 import {Ola,Flw} from './Ola'
 import axios from 'axios'
 import Create from './create'
+import Grafos from './grafos'
 import {
   BrowserRouter as Router,
   Route,
@@ -33,10 +34,10 @@ class App extends Component {
           <div className="collapse navbar-collapse navbar-ex1-collapse">
             <ul className="nav navbar-nav">
               <li>
-                <Link to="/create">Create</Link>
+                <Link to="/create">Criar</Link>
               </li>
               <li>
-              <Link to="/">Search</Link>
+              <Link to="/grafos">Grafos</Link>
                 </li>
             </ul>
           </div>
@@ -48,7 +49,7 @@ class App extends Component {
     <Route exact path ='/create' component={Create}/>
     <Route exact path ='/edit/:id' component={EditSeries}/>
     <Route exact path ='/series/:genre' component={Series}/>
-    
+    <Route exact path ='/grafos' component={Grafos}/>
     {/* <Home/> */}
 
     </div>

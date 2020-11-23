@@ -93,7 +93,8 @@ class Home extends Component{
               }{
                 !this.state.isLoading &&
                 // <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lista de séries: {this.state.series.map((element)=>this.renderSerieLink(element.name))}</div>
-                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lista de generos: {this.state.genres.map((element)=>this.renderGenreLink(element))}
+                <div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lista de generos: {this.state.genres.map((element)=>this.renderGenreLink(element))}
                 
                 <br/>  <br/>  <br/>  <br/>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a className="btn btn-danger" onClick={()=> apis.deleteall()}>Limpar Series</a>

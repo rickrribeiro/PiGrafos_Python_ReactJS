@@ -1,5 +1,13 @@
 {
-  "series": [],
+  "series": [
+    {
+      "name": "serie1",
+      "status": "toWatch",
+      "genre": "Comédia",
+      "comment": "123",
+      "id": 1
+    }
+  ],
   "genres": [
     "Comédia",
     "Drama",
