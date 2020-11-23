@@ -73,6 +73,7 @@ render(){
                 Nome: &nbsp; <input type="text" ref='name' class-Name="form-control" /> 
                 <br/> <br/>
                     Genero: &nbsp; <select ref='genre'>
+                        <option key = "all" value="all">all</option>
                         {this.state.genre.map(element =><option key = {element} value={element}>{element}</option>)}
                 </select>
                 <br/> <br/>
