@@ -15,6 +15,15 @@ const apis = {
     loadSeriesByGenre : (genre) => api.get('series?genre='+genre),
     deleteSeries : (id)=>api.delete('series/'+id),
     loadSeriesById : (id) => api.get('series/'+id),
-    updateSeries : (series) =>api.put('series/'+series.id,series)
+    updateSeries : (series) =>api.put('series/'+series.id,series),
+    deleteall: () => {
+        var series = api.get('series').then((val)=>{
+            val.data.forEach(element => {
+                api.delete('series/'+element.id)
+            });
+        })
+        
+
+    }
 }
 export default apis
