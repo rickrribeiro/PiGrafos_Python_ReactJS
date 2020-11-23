@@ -3,19 +3,25 @@ from build import Addons
 import flask
 from flask import jsonify
 from flask import request
+from flask_cors import CORS, cross_origin
 
 def main():
     my_graph = Graph()
     
     app = flask.Flask(__name__)
     app.config["DEBUG"] = True
-    
+    cors = CORS(app)
+    app.config['CORS_HEADERS'] = 'application/json'
+
+
     ##################          ALL GET DATA ENDPOINTS           ###########################
     @app.route('/', methods=['GET'])
+    @cross_origin()
     def home():
        return jsonify("Grafos")
     
     @app.route('/getNodes', methods=['GET'])
+    @cross_origin()
     def getNodes():
        print(my_graph.ShowNodes())
        return jsonify(list(my_graph.ShowNodes()))
@@ -23,42 +29,50 @@ def main():
        
        
     @app.route('/getEdges', methods=['GET'])
+    @cross_origin()
     def getEdges():    
        return jsonify(list(my_graph.ShowEdges()))
        
        
     @app.route('/getList', methods=['GET'])
+    @cross_origin()
     def getAdjacencia():    
        print(my_graph.ShowListAdj())
        return jsonify(str(my_graph.ShowListAdj()))   
        
     @app.route('/getMatrix', methods=['GET'])
+    @cross_origin()
     def getMatrix():    
        print(my_graph.AdjMatrix())
        return jsonify(str(my_graph.AdjMatrix())) 
         
     @app.route('/getNNodes', methods=['GET'])
+    @cross_origin()
     def getNVertice():    
        return jsonify(str(my_graph.NumberOfNodes()))
        
        
     @app.route('/getNEdges', methods=['GET'])
+    @cross_origin()
     def getNEdges():    
        return jsonify(str(my_graph.NumberOfEdges()))
     
     
     
     @app.route('/getNComponents', methods=['GET'])
+    @cross_origin()
     def getNComponents():    
        return jsonify(str(my_graph.NumberOfComponents()))
        
        
     @app.route('/getDensity', methods=['GET'])
+    @cross_origin()
     def getDensity():    
        return jsonify(str(my_graph.GraphDensity()))
        
        
     @app.route('/getClustering', methods=['GET'])
+    @cross_origin()
     def getClustering():    
        return jsonify(str(my_graph.AverageClustering()))
         
@@ -66,6 +80,7 @@ def main():
        
        
     @app.route('/getDegree', methods=['POST'])
+    @cross_origin()
     def getDegree():    
        
        node = request.get_json()
@@ -76,6 +91,7 @@ def main():
        
        
     @app.route('/getPath', methods=['POST'])
+    @cross_origin()
     def getPath():
        data = str(request.json)
       # data.replace("b","'")
@@ -89,40 +105,47 @@ def main():
        
           
     @app.route('/Clear', methods=['GET'])
+    @cross_origin()
     def clear():
         my_graph.ClearGraph()
         return jsonify("Grafo Limpo")   
       
     ###################            Generate files ENDPOINTS          ######################
     @app.route('/generateJSON', methods=['GET'])
+    @cross_origin()
     def generateJson():    
        return jsonify(my_graph.dump_json_graph("graph")) 
     
     @app.route('/getKamada', methods=['GET'])
+    @cross_origin()
     def getKamada():    
        my_graph.KamadaGraph()
        return jsonify("teste") 
        
        
     @app.route('/getSimple', methods=['GET'])
+    @cross_origin()
     def getSimple():    
        my_graph.PlotGraph()
        return jsonify("teste")
        
        
     @app.route('/getCircular', methods=['GET'])
+    @cross_origin()
     def getCircular():    
        my_graph.CircularGraph()
        return jsonify("teste")  
        
        
     @app.route('/getRandom', methods=['GET'])
+    @cross_origin()
     def getRandom():    
        my_graph.RandomGraph()
        return jsonify("teste") 
       
       
     @app.route('/getFruchterman', methods=['GET'])
+    @cross_origin()
     def getFruchterman():    
        my_graph.FruchtermanGraph()
        return jsonify("teste") 
@@ -130,6 +153,7 @@ def main():
     ###################            ALL POST DATA ENDPOINTS           ######################
        
     @app.route('/addNode', methods=['POST'])
+    @cross_origin()
     def addNode():
        print("aq")
        data = request.get_json()
@@ -141,6 +165,7 @@ def main():
        
        
     @app.route('/addEdge', methods=['POST'])
+    @cross_origin()
     def addEdge():
        print("aq")
        data = str(request.json)
@@ -159,8 +184,20 @@ def main():
 	###################            ALL PI NEW ENDPOINTS           ######################
 	
     @app.route('/generateGraphs', methods=['POST'])
+    @cross_origin()
     def generateGraphs():
-        print("generateGraphs")
+        print(request.get_json())
+        my_graph.ClearGraph()
+        if request.json['referencia'] == 'status':
+            for val in request.json['statusList']:
+                my_graph.AddNode(val)
+
+        else:
+            for val in request.json['genreList']:
+                my_graph.AddNode(val)
+
+        my_graph.PlotGraph()            
+        
       
         return jsonify("adicionado")   
 	
@@ -181,6 +218,7 @@ def main():
        # choice = input("\nEscolha uma das opcoes acima: ")
         
     @app.route('/api/v1/resources/books', methods=['GET'])
+    @cross_origin()
     def api_id():
         my_graph.AddMultNodes(1)
         return jsonify(my_graph.ShowNodes())

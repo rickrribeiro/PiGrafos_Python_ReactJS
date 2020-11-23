@@ -27,7 +27,8 @@ class Grafos extends Component{
           statusList: this.state.statusSerie,
           genreList: this.state.genre,
           status: this.refs.status.value,
-          genre: this.refs.genre.value
+          genre: this.refs.genre.value,
+          referencia: this.refs.referencia.value
         }
         apis.generateGraph(newGraph).then(
   
@@ -100,6 +101,11 @@ render(){
                 <select ref='status'>
                         <option key = "all" value="all">all</option>
                         {this.state.statusSerie.map(element =><option key = {element} value={element}>{element}</option>)}
+                </select>
+                <br/><br/>
+                Gerado por:&nbsp;<select ref='referencia'>
+                        <option key = "genero" value="genero">Genero</option>
+                        <option key = "statua" value="status">Status</option>
                 </select>
                 <br/> <br/>
                
