@@ -1,13 +1,19 @@
 import axios from 'axios'
 
-
+//API DB
 const api = axios.create({
     baseURL:'http://localhost:3001/'
 
 })
+
+//API Grafos
+const apiGraph = axios.create({
+    baseURL:'http://localhost:5000/'
+
+})
 //export const loadGenres : () => api.get('genres')
 const apis = {
-    //loadGenres:loadGenres
+    //API DB
     loadGenres : () => api.get('genres'),
     loadSeries : () => api.get('series'),
     loadstatusSerie : () => api.get('status'),
@@ -17,13 +23,16 @@ const apis = {
     loadSeriesById : (id) => api.get('series/'+id),
     updateSeries : (series) =>api.put('series/'+series.id,series),
     deleteall: () => {
-        var series = api.get('series').then((val)=>{
+        api.get('series').then((val)=>{
             val.data.forEach(element => {
                 api.delete('series/'+element.id)
             });
         })
         
 
-    }
+    },
+
+    //API Graph
+    generateGraph : (graph) => apiGraph.post('generateGraphs', graph)
 }
 export default apis

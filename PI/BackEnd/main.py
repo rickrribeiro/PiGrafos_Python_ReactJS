@@ -154,11 +154,15 @@ def main():
        
        
     
+	 
 	
+	###################            ALL PI NEW ENDPOINTS           ######################
 	
-	
-	
-	
+    @app.route('/generateGraphs', methods=['POST'])
+    def generateGraphs():
+        print("generateGraphs")
+      
+        return jsonify("adicionado")   
 	
 	
     app.run()

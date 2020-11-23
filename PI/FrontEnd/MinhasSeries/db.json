@@ -6,6 +6,13 @@
       "genre": "Comédia",
       "comment": "123",
       "id": 1
+    },
+    {
+      "name": "111",
+      "status": "watching",
+      "genre": "Comédia",
+      "comment": "1111",
+      "id": 2
     }
   ],
   "genres": [

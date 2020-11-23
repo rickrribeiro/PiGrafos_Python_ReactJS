@@ -9,16 +9,35 @@ class Grafos extends Component{
     
     constructor(props){
         super(props)
-          this.state={
+        this.state={
             count:0,
             statusSerie:[],
             genre:[],
             series:[],
             isLoading:false,
             redirect:false
-          }
-
+        }
+        this.gerarGrafos = this.gerarGrafos.bind(this);
       }  
+
+
+      gerarGrafos(){
+        const newGraph={
+          series: this.state.series,
+          statusList: this.state.statusSerie,
+          genreList: this.state.genre,
+          status: this.refs.status.value,
+          genre: this.refs.genre.value
+        }
+        apis.generateGraph(newGraph).then(
+  
+        //   this.setState({
+        //     redirect: '/series/'+this.refs.genre.value
+        //   })
+  
+         )
+        
+      }
 
       componentDidMount(){
         this.setState.isLoading = true;
@@ -47,8 +66,9 @@ class Grafos extends Component{
            
             this.setState({
                 
-                isLoading:false,
-                series:res.data
+               
+                series:res.data,
+                isLoading:false
       
             })
           })
@@ -70,8 +90,7 @@ render(){
 
             <h1>Grafos</h1>
             <form>
-                Nome: &nbsp; <input type="text" ref='name' class-Name="form-control" /> 
-                <br/> <br/>
+                   <br/> <br/>
                     Genero: &nbsp; <select ref='genre'>
                         <option key = "all" value="all">all</option>
                         {this.state.genre.map(element =><option key = {element} value={element}>{element}</option>)}
@@ -79,12 +98,13 @@ render(){
                 <br/> <br/>
                 Status: &nbsp; 
                 <select ref='status'>
+                        <option key = "all" value="all">all</option>
                         {this.state.statusSerie.map(element =><option key = {element} value={element}>{element}</option>)}
                 </select>
                 <br/> <br/>
-                Comentários: &nbsp; <input ref='comment' type="text" class-Name="form-control" />
+               
                 <br/> <br/>
-                <button  onClick={this.saveSeries}>Salvar</button>
+                <button  onClick={this.gerarGrafos}>Gerar</button>
             </form>
         </section> //depois botar imagem e description
     )
