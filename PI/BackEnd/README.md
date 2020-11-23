@@ -1,7 +1,4 @@
 # GrafoAv02
-Descrição básica projeto
+Descrição básica projeto <br/>
 
-digrafo
-aresta ponderada
-linha de comando
-carregar arquivo
+run: python3 main.py
