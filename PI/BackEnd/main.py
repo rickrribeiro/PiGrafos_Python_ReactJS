@@ -191,12 +191,20 @@ def main():
         if request.json['referencia'] == 'status':
             for val in request.json['statusList']:
                 my_graph.AddNode(val)
+            for val in request.json['series']:
+                my_graph.AddEdge(val['name'],val['status'])         
 
         else:
             for val in request.json['genreList']:
                 my_graph.AddNode(val)
+            for val in request.json['series']:
+                my_graph.AddEdge(val['name'],val['genre'])    
 
-        my_graph.PlotGraph()            
+        my_graph.PlotGraph()
+        my_graph.FruchtermanGraph()
+        my_graph.RandomGraph()
+        my_graph.CircularGraph()
+        my_graph.KamadaGraph()            
         
       
         return jsonify("adicionado")   
