@@ -189,16 +189,21 @@ def main():
         print(request.get_json())
         my_graph.ClearGraph()
         if request.json['referencia'] == 'status':
-            for val in request.json['statusList']:
+            for val in request.json['statusList']: #adiciona todos os status
                 my_graph.AddNode(val)
-            for val in request.json['series']:
-                my_graph.AddEdge(val['name'],val['status'])         
+            for val in request.json['series']: #adiciona as series
+                if request.json['status'] == 'all' or request.json['status'] == val['status']:
+                    if request.json['genre'] == 'all' or val['genre'] == request.json['genre']:   
+                        my_graph.AddEdge(val['name'],val['status'])
+                                          
 
         else:
-            for val in request.json['genreList']:
+            for val in request.json['genreList']: #adiciona todos os generos
                 my_graph.AddNode(val)
-            for val in request.json['series']:
-                my_graph.AddEdge(val['name'],val['genre'])    
+            for val in request.json['series']: #adiciona todas as series
+                if request.json['status'] == 'all' or request.json['status'] == val['status']:
+                    if request.json['genre'] == 'all' or val['genre'] == request.json['genre']:  
+                        my_graph.AddEdge(val['name'],val['genre'])    
 
         my_graph.PlotGraph()
         my_graph.FruchtermanGraph()
