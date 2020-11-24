@@ -10,3 +10,6 @@
  -FrontEnd: ReactJS <br>
  -BackEnd: Python (Flask, networkx)
  
+ <h3>Folder IHM - Final project</h3>
+-Persona <br>
+-Business canvas
