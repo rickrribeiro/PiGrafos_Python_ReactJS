@@ -10,5 +10,6 @@
  -FrontEnd: ReactJS <br>
  -BackEnd: Python (Flask, networkx)
  
- <h3>Folder IHM</h3>
-Files for the Human machine interaction subject
+ <h3>Folder IHM - Final project</h3>
+-Persona
+-Business canvas
