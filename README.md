@@ -11,5 +11,5 @@
  -BackEnd: Python (Flask, networkx)
  
  <h3>Folder IHM - Final project</h3>
--Persona
+-Persona <br>
 -Business canvas
