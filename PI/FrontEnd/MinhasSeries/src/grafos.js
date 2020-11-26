@@ -105,7 +105,7 @@ render(){
                 <br/><br/>
                 Gerado por:&nbsp;<select ref='referencia'>
                         <option key = "genero" value="genero">Genero</option>
-                        <option key = "statua" value="status">Status</option>
+                        <option key = "status" value="status">Status</option>
                 </select>
                 <br/> <br/>
                

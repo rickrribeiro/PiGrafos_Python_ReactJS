@@ -7,6 +7,7 @@ import scipy
 from networkx.drawing.nx_agraph import graphviz_layout
 import pylab
 import numpy as np
+from recommendations import Recommendations
 
 class Graph(object):
     def __init__(self):

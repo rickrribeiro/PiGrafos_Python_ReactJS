@@ -1,5 +1,6 @@
 from build import Graph
 from build import Addons
+from build import Recommendations
 import flask
 from flask import jsonify
 from flask import request

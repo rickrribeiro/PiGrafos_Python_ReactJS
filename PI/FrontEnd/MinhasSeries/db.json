@@ -34,6 +34,48 @@
       "genre": "Comédia",
       "comment": "",
       "id": 5
+    },
+    {
+      "name": "123",
+      "status": "toWatch",
+      "genre": "Comédia",
+      "comment": "",
+      "id": 6
+    },
+    {
+      "name": "1234",
+      "status": "watched",
+      "genre": "Comédia",
+      "comment": "",
+      "id": 7
+    },
+    {
+      "name": "6",
+      "status": "watched",
+      "genre": "Ação",
+      "comment": "",
+      "id": 8
+    },
+    {
+      "name": "7",
+      "status": "watched",
+      "genre": "Ação",
+      "comment": "",
+      "id": 9
+    },
+    {
+      "name": "8",
+      "status": "watched",
+      "genre": "Ação",
+      "comment": "",
+      "id": 10
+    },
+    {
+      "name": "9",
+      "status": "toWatch",
+      "genre": "Ação",
+      "comment": "",
+      "id": 11
     }
   ],
   "genres": [
