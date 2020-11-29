@@ -187,6 +187,7 @@ def main():
     @app.route('/generateGraphs', methods=['POST'])
     @cross_origin()
     def generateGraphs():
+        print("req:")
         print(request.get_json())
         my_graph.ClearGraph()
         if request.json['referencia'] == 'status':
@@ -205,12 +206,16 @@ def main():
                 if request.json['status'] == 'all' or request.json['status'] == val['status']:
                     if request.json['genre'] == 'all' or val['genre'] == request.json['genre']:  
                         my_graph.AddEdge(val['name'],val['genre'])    
-
-        my_graph.PlotGraph()
-        my_graph.FruchtermanGraph()
-        my_graph.RandomGraph()
-        my_graph.CircularGraph()
-        my_graph.KamadaGraph()            
+        if request.json['tipo'] == 'Simple':
+            my_graph.PlotGraph()
+        if request.json['tipo'] == 'Fruchterman':    
+            my_graph.FruchtermanGraph()
+        if request.json['tipo'] == 'Random':
+            my_graph.RandomGraph()
+        if request.json['tipo'] == 'Circular':
+            my_graph.CircularGraph()
+        if request.json['tipo'] == 'Kamada':
+            my_graph.KamadaGraph()            
         
       
         return jsonify("adicionado")   

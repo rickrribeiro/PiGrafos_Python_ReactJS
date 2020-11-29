@@ -1,1 +1,133 @@
 Grafo criado!
+Limpeza do grafo concluida !
+Aresta ('1', 'Comédia') adicionada com sucesso!
+Aresta ('2', 'Comédia') adicionada com sucesso!
+Aresta ('3', 'Comédia') adicionada com sucesso!
+Aresta ('4', 'Drama') adicionada com sucesso!
+Aresta ('5', 'Comédia') adicionada com sucesso!
+Aresta ('123', 'Comédia') adicionada com sucesso!
+Aresta ('1234', 'Comédia') adicionada com sucesso!
+Aresta ('6', 'Ação') adicionada com sucesso!
+Aresta ('7', 'Ação') adicionada com sucesso!
+Aresta ('8', 'Ação') adicionada com sucesso!
+Aresta ('9', 'Ação') adicionada com sucesso!
+Limpeza do grafo concluida !
+Aresta ('1', 'Comédia') adicionada com sucesso!
+Aresta ('2', 'Comédia') adicionada com sucesso!
+Aresta ('3', 'Comédia') adicionada com sucesso!
+Aresta ('4', 'Drama') adicionada com sucesso!
+Aresta ('5', 'Comédia') adicionada com sucesso!
+Aresta ('123', 'Comédia') adicionada com sucesso!
+Aresta ('1234', 'Comédia') adicionada com sucesso!
+Aresta ('6', 'Ação') adicionada com sucesso!
+Aresta ('7', 'Ação') adicionada com sucesso!
+Aresta ('8', 'Ação') adicionada com sucesso!
+Aresta ('9', 'Ação') adicionada com sucesso!
+Limpeza do grafo concluida !
+Aresta ('1', 'Comédia') adicionada com sucesso!
+Aresta ('2', 'Comédia') adicionada com sucesso!
+Aresta ('3', 'Comédia') adicionada com sucesso!
+Aresta ('4', 'Drama') adicionada com sucesso!
+Aresta ('5', 'Comédia') adicionada com sucesso!
+Aresta ('123', 'Comédia') adicionada com sucesso!
+Aresta ('1234', 'Comédia') adicionada com sucesso!
+Aresta ('6', 'Ação') adicionada com sucesso!
+Aresta ('7', 'Ação') adicionada com sucesso!
+Aresta ('8', 'Ação') adicionada com sucesso!
+Aresta ('9', 'Ação') adicionada com sucesso!
+Limpeza do grafo concluida !
+Aresta ('1', 'Comédia') adicionada com sucesso!
+Aresta ('2', 'Comédia') adicionada com sucesso!
+Aresta ('3', 'Comédia') adicionada com sucesso!
+Aresta ('4', 'Drama') adicionada com sucesso!
+Aresta ('5', 'Comédia') adicionada com sucesso!
+Aresta ('123', 'Comédia') adicionada com sucesso!
+Aresta ('1234', 'Comédia') adicionada com sucesso!
+Aresta ('6', 'Ação') adicionada com sucesso!
+Aresta ('7', 'Ação') adicionada com sucesso!
+Aresta ('8', 'Ação') adicionada com sucesso!
+Aresta ('9', 'Ação') adicionada com sucesso!
+Limpeza do grafo concluida !
+Aresta ('1', 'Comédia') adicionada com sucesso!
+Aresta ('2', 'Comédia') adicionada com sucesso!
+Aresta ('3', 'Comédia') adicionada com sucesso!
+Aresta ('4', 'Drama') adicionada com sucesso!
+Aresta ('5', 'Comédia') adicionada com sucesso!
+Aresta ('123', 'Comédia') adicionada com sucesso!
+Aresta ('1234', 'Comédia') adicionada com sucesso!
+Aresta ('6', 'Ação') adicionada com sucesso!
+Aresta ('7', 'Ação') adicionada com sucesso!
+Aresta ('8', 'Ação') adicionada com sucesso!
+Aresta ('9', 'Ação') adicionada com sucesso!
+Limpeza do grafo concluida !
+Aresta ('1', 'Comédia') adicionada com sucesso!
+Aresta ('2', 'Comédia') adicionada com sucesso!
+Aresta ('3', 'Comédia') adicionada com sucesso!
+Aresta ('4', 'Drama') adicionada com sucesso!
+Aresta ('5', 'Comédia') adicionada com sucesso!
+Aresta ('123', 'Comédia') adicionada com sucesso!
+Aresta ('1234', 'Comédia') adicionada com sucesso!
+Aresta ('6', 'Ação') adicionada com sucesso!
+Aresta ('7', 'Ação') adicionada com sucesso!
+Aresta ('8', 'Ação') adicionada com sucesso!
+Aresta ('9', 'Ação') adicionada com sucesso!
+Limpeza do grafo concluida !
+Aresta ('1', 'Comédia') adicionada com sucesso!
+Aresta ('2', 'Comédia') adicionada com sucesso!
+Aresta ('3', 'Comédia') adicionada com sucesso!
+Aresta ('4', 'Drama') adicionada com sucesso!
+Aresta ('5', 'Comédia') adicionada com sucesso!
+Aresta ('123', 'Comédia') adicionada com sucesso!
+Aresta ('1234', 'Comédia') adicionada com sucesso!
+Aresta ('6', 'Ação') adicionada com sucesso!
+Aresta ('7', 'Ação') adicionada com sucesso!
+Aresta ('8', 'Ação') adicionada com sucesso!
+Aresta ('9', 'Ação') adicionada com sucesso!
+Limpeza do grafo concluida !
+Aresta ('1', 'Comédia') adicionada com sucesso!
+Aresta ('2', 'Comédia') adicionada com sucesso!
+Aresta ('3', 'Comédia') adicionada com sucesso!
+Aresta ('4', 'Drama') adicionada com sucesso!
+Aresta ('5', 'Comédia') adicionada com sucesso!
+Aresta ('123', 'Comédia') adicionada com sucesso!
+Aresta ('1234', 'Comédia') adicionada com sucesso!
+Aresta ('6', 'Ação') adicionada com sucesso!
+Aresta ('7', 'Ação') adicionada com sucesso!
+Aresta ('8', 'Ação') adicionada com sucesso!
+Aresta ('9', 'Ação') adicionada com sucesso!
+Limpeza do grafo concluida !
+Aresta ('1', 'Comédia') adicionada com sucesso!
+Aresta ('2', 'Comédia') adicionada com sucesso!
+Aresta ('3', 'Comédia') adicionada com sucesso!
+Aresta ('4', 'Drama') adicionada com sucesso!
+Aresta ('5', 'Comédia') adicionada com sucesso!
+Aresta ('123', 'Comédia') adicionada com sucesso!
+Aresta ('1234', 'Comédia') adicionada com sucesso!
+Aresta ('6', 'Ação') adicionada com sucesso!
+Aresta ('7', 'Ação') adicionada com sucesso!
+Aresta ('8', 'Ação') adicionada com sucesso!
+Aresta ('9', 'Ação') adicionada com sucesso!
+Limpeza do grafo concluida !
+Aresta ('1', 'Comédia') adicionada com sucesso!
+Aresta ('2', 'Comédia') adicionada com sucesso!
+Aresta ('3', 'Comédia') adicionada com sucesso!
+Aresta ('4', 'Drama') adicionada com sucesso!
+Aresta ('5', 'Comédia') adicionada com sucesso!
+Aresta ('123', 'Comédia') adicionada com sucesso!
+Aresta ('1234', 'Comédia') adicionada com sucesso!
+Aresta ('6', 'Ação') adicionada com sucesso!
+Aresta ('7', 'Ação') adicionada com sucesso!
+Aresta ('8', 'Ação') adicionada com sucesso!
+Aresta ('9', 'Ação') adicionada com sucesso!
+Limpeza do grafo concluida !
+Aresta ('1', 'toWatch') adicionada com sucesso!
+Aresta ('2', 'toWatch') adicionada com sucesso!
+Aresta ('3', 'toWatch') adicionada com sucesso!
+Aresta ('4', 'toWatch') adicionada com sucesso!
+Aresta ('5', 'watching') adicionada com sucesso!
+Aresta ('123', 'toWatch') adicionada com sucesso!
+Aresta ('1234', 'watched') adicionada com sucesso!
+Aresta ('6', 'watched') adicionada com sucesso!
+Aresta ('7', 'watched') adicionada com sucesso!
+Aresta ('8', 'watched') adicionada com sucesso!
+Aresta ('9', 'toWatch') adicionada com sucesso!

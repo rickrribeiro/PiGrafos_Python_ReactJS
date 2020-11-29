@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import apis from './api'
 import { Redirect } from 'react-router-dom'
-
+import simple from './images/grafo_Gerado.png'
 
 
 class Grafos extends Component{
@@ -28,14 +28,12 @@ class Grafos extends Component{
           genreList: this.state.genre,
           status: this.refs.status.value,
           genre: this.refs.genre.value,
-          referencia: this.refs.referencia.value
+          referencia: this.refs.referencia.value,
+          tipo: this.refs.tipo.value
         }
         apis.generateGraph(newGraph).then(
-  
-        //   this.setState({
-        //     redirect: '/series/'+this.refs.genre.value
-        //   })
-  
+         
+          
          )
         
       }
@@ -108,10 +106,19 @@ render(){
                         <option key = "status" value="status">Status</option>
                 </select>
                 <br/> <br/>
-               
+                Tipo do grafo:&nbsp;<select ref='tipo'>
+                        <option key = "Simple" value= "Simple">Simple</option>
+                        <option key = "Fruchterman" value="Fruchterman">Fruchterman</option>
+                        <option key = "Kamada" value="Kamada">Kamada</option>
+                        <option key = "Random" value="Random">Random</option>
+                        <option key = "Circular" value="Circular">Circular</option>
+                </select>
+                <br/> <br/>
                 <br/> <br/>
                 <button  onClick={this.gerarGrafos}>Gerar</button>
             </form>
+            <img src={simple}ref="foto"/>
+
         </section> //depois botar imagem e description
     )
 }
