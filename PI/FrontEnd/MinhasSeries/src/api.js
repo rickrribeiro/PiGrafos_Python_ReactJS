@@ -31,8 +31,15 @@ const apis = {
         
 
     },
-
+    
     //API Graph
+    getRecommendation:() =>{
+        apiGraph.get('getRecommendation').then((val)=>{
+            console.log(val.data)
+            alert(val.data);
+        })
+
+    },
     generateGraph : (graph) => apiGraph.post('generateGraphs', graph)
 }
 export default apis

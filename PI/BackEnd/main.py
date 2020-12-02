@@ -183,7 +183,11 @@ def main():
 	 
 	
 	###################            ALL PI NEW ENDPOINTS           ######################
-	
+    @app.route('/getRecommendation', methods=['GET'])
+    @cross_origin()
+    def getRecommendation():
+        return Recommendations.recommended()
+
     @app.route('/generateGraphs', methods=['POST'])
     @cross_origin()
     def generateGraphs():
