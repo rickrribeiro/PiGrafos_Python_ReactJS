@@ -1,32 +1,25 @@
 {
   "series": [
     {
-      "name": "1",
+      "name": "a",
       "status": "toWatch",
       "genre": "Comédia",
       "comment": "",
       "id": 1
     },
     {
-      "name": "2",
-      "status": "toWatch",
+      "name": "b",
+      "status": "watched",
       "genre": "Comédia",
       "comment": "",
       "id": 2
     },
     {
-      "name": "3",
-      "status": "toWatch",
-      "genre": "Drama",
+      "name": "c",
+      "status": "watched",
+      "genre": "Comédia",
       "comment": "",
       "id": 3
-    },
-    {
-      "name": "5",
-      "status": "toWatch",
-      "genre": "Ação",
-      "comment": "",
-      "id": 4
     }
   ],
   "genres": [
