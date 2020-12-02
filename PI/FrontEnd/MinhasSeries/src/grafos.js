@@ -20,8 +20,8 @@ class Grafos extends Component{
         this.gerarGrafos = this.gerarGrafos.bind(this);
       }  
 
-
-      gerarGrafos(){
+      async gerarGrafos(){
+       
         const newGraph={
           series: this.state.series,
           statusList: this.state.statusSerie,
@@ -32,9 +32,9 @@ class Grafos extends Component{
           tipo: this.refs.tipo.value
         }
         apis.generateGraph(newGraph).then(
-         
           
-         )
+          )
+          
         
       }
 
@@ -74,9 +74,20 @@ class Grafos extends Component{
           
       }
     
-
-
-render(){
+      
+      render(){
+        const btnStyle ={
+       
+          width:"115px",
+          height: "55px",
+          background: "#4E9CAF",
+          padding: "10px",
+          textAlign: "center",
+          borderRadius: "5px",
+          color: "white",
+          fontWeight: "bold",
+          lineHeight: "25px"
+      }
 
     return(
 
@@ -115,7 +126,8 @@ render(){
                 </select>
                 <br/> <br/>
                 <br/> <br/>
-                <button  onClick={this.gerarGrafos}>Gerar</button>
+                <a style= {btnStyle} onClick={this.gerarGrafos}>Gerar</a>
+                <br/><br/><br/>
             </form>
             <img src={simple}ref="foto"/>
 
