@@ -16,7 +16,7 @@ Para baixar o projeto:
 	
 Instalar as dependências:
 	Gerais:
-		1.Instale o python3 ![alt text](https://i1.wp.com/www.vooo.pro/insights/wp-content/uploads/2016/08/Vooo-Insights-Image_python_02.png?fit=777%2C738&ssl=1)
+		1.Instale o python3 ![alt text][(https://i1.wp.com/www.vooo.pro/insights/wp-content/uploads/2016/08/Vooo-Insights-Image_python_02.png?fit=777%2C738&ssl=1)]
 		2.Instale o pip3 
 		3.Installe o npm 
 		4.installe o yarn 
