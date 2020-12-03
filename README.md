@@ -33,3 +33,4 @@ Rodar o projeto:<br>
 		1. Acessar a pasta FrontEnd/MinhasSeries e rodar o comando "yarn json-server db.json -p 3001 --watch "<br>
 	FrontEnd:<br>
 		1.Acessar a pasta FrontEnd/MinhasSeries e rodar o comando "npm start"<br>
+	<h3>Caso receba erro de cors, abrir o navegador utilizando o script "runchromedisablesecurity" no diretório raiz. </h3>
