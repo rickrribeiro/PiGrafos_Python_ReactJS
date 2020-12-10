@@ -1,32 +1,46 @@
 {
   "series": [
     {
-      "name": "a",
+      "name": "PI1",
       "status": "toWatch",
       "genre": "Comédia",
       "comment": "",
       "id": 1
     },
     {
-      "name": "b",
-      "status": "watched",
-      "genre": "Comédia",
-      "comment": "",
-      "id": 2
-    },
-    {
-      "name": "c",
-      "status": "watched",
+      "name": "pi3",
+      "status": "toWatch",
       "genre": "Comédia",
       "comment": "",
       "id": 3
     },
     {
-      "name": "d",
-      "status": "toWatch",
-      "genre": "Comédia",
+      "name": "pi4",
+      "status": "watched",
+      "genre": "Drama",
       "comment": "",
       "id": 4
+    },
+    {
+      "name": "p5",
+      "status": "watched",
+      "genre": "Drama",
+      "comment": "",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "name": "pi2",
+      "status": "toWatch",
+      "genre": "Comédia",
+      "comment": ""
+    },
+    {
+      "name": "p7",
+      "status": "toWatch",
+      "genre": "Drama",
+      "comment": "",
+      "id": 7
     }
   ],
   "genres": [

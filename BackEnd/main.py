@@ -221,7 +221,10 @@ def main():
         if request.json['tipo'] == 'Kamada':
             my_graph.KamadaGraph()            
         
-      
+        my_graph.AverageClustering()
+        my_graph.NumberOfEdges()
+        my_graph.NumberOfNodes()
+        my_graph.WritePajek()
         return jsonify("adicionado")   
 	
 	

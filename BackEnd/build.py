@@ -99,15 +99,15 @@ class Graph(object):
         plt.clf()
         
     def NumberOfNodes(self):
-        Addons.CalculusLog(self,"Numero de nos: " + str(len(self.G)))
+        Addons.CalculusLog(self,"\nNumero de nos: " + str(len(self.G)))
         return len(self.G)
         
     def NumberOfEdges(self):
-        Addons.CalculusLog(self,"Numero de arestas: " + str(self.G.number_of_edges()))
+        Addons.CalculusLog(self,"\nNumero de arestas: " + str(self.G.number_of_edges()))
         return self.G.number_of_edges()
         
     def NumberOfComponents(self):
-        Addons.CalculusLog(self,"Numero de componentes: " + str(self.G.number_of_edges()+len(self.G)))
+        Addons.CalculusLog(self,"\nNumero de componentes: " + str(self.G.number_of_edges()+len(self.G)))
         return self.G.number_of_edges()+len(self.G)
         
     def ShortestPath(self,init,end):
@@ -115,11 +115,11 @@ class Graph(object):
         return nx.shortest_path(self.G,source=init,target=end)
         
     def GraphDensity(self):
-        Addons.CalculusLog(self,"Densidade: " + nx.density(self.G))
+        Addons.CalculusLog(self,"\nDensidade: " + str(nx.density(self.G)))
         return nx.density(self.G)
         
     def AverageClustering(self):
-        Addons.CalculusLog(self,"Aglomeracao: " + nx.average_clustering(self.G))
+        Addons.CalculusLog(self,"\nAglomeracao: " + str(nx.average_clustering(self.G)))
         return nx.average_clustering(self.G)
     
     def ReadCSV(self):
